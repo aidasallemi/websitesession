@@ -1,0 +1,103 @@
+header{
+    background-color: #1C3879;
+    height: 80px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+    box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    column-gap: 20px;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    z-index: 2;
+}
+.logo{
+    font-size: 50px;
+    color: #D0C9C0;
+    cursor: pointer;
+    
+}
+
+.P-logo{
+    color: #607EAA;
+}
+
+.navbar-container{
+    display: flex;
+    column-gap: 10px;
+
+}
+
+a{
+    text-decoration: none;
+    color: #EAE3D2;
+    font-size: 32px;
+}
+
+.icons{
+    display: flex;
+    column-gap: 30px;
+}
+
+.navbar-item{
+    padding: 21px 10px;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+.navbar-item:hover{
+    background-color: #d0c9c069;
+}
+
+.icons a{
+    font-size: 24px;
+}
+
+.icons a:hover{
+    color: #D0C9C0;
+}
+
+
+
+
+@media screen and (max-width: 930px){
+    .icons-container{
+        display: none;
+    }
+
+    .navbar-container{
+        column-gap: 10px;
+    }
+   
+}
+
+@media screen and (max-width: 750px){
+    .navbar-container{
+        display: none;
+    }
+    .logo{
+        padding-left: 200px;
+    }
+}
+@media screen and (max-width: 550px){
+
+    .logo{
+        padding-left: 150px;
+    }
+}
+
+@media screen and (max-width: 450px){
+
+    .logo{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 375px){
+
+    .logo{
+        padding-left: 80px;
+    }
+}
